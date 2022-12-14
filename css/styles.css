@@ -45,12 +45,6 @@ h1{
     color: var(--title-color)
 }
 
-h3{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--text-color)
-}
 
 p {
     font-style: normal;
@@ -123,6 +117,15 @@ ul{
     color: var(--text-color);
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+}
+
 .center{
     display: flex;
     justify-content: space-between;
@@ -139,8 +142,7 @@ ul{
 }
 .container{
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 
@@ -162,11 +164,26 @@ ul{
 
 }
 
+.container-two {
+   position: relative;
+   overflow: hidden;
+}
+
 .container-two:hover{
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
  
+}
+
+.container-two2:hover{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ 
+}
+.container-two2{
+    padding: 20px 24px;
 }
 
 .clientes{
@@ -238,6 +255,10 @@ ul{
     display: flex;
 }
 
+.is-hidden {
+    visibility: hidden;
+}
+
 .link:hover .email-one{
     fill: #2196F3;
 }
@@ -285,8 +306,16 @@ ul{
 
 .menu-text article{
     margin-right: 30px;
-    }
+ }
 
+.modal {
+    width: 528px;
+    height: 581px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #FFFFFF;
+}
 
 .section{
     padding-bottom: 94px; 
@@ -329,6 +358,13 @@ ul{
     fill: #FFFFFF;
 }
 
+.title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color)
+}
+
 .title-logo {
     font-size: 26px;
     line-height: 1.29;
@@ -336,6 +372,31 @@ ul{
     margin-right: 30px;
     color: var(--brand-color)
     
+}
+
+.tex-emergent {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 63px 24px;
+
+    background: rgba(33, 150, 243, 0.9);
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+
+    transform: translateY(105%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.web:hover .tex-emergent {
+    transform: translatey(0%);
 }
 
 .title-logo1{
@@ -388,6 +449,7 @@ ul{
 .title-img2 {
     width: 370px;
     height: 404px;
+    margin-top: 50px;
     display: flex;
 }
 
@@ -423,6 +485,7 @@ ul{
     cursor: pointer;
     height: 252px;
     padding-left: 10%;
+    margin-top: 50px;
     background: #2F303A;
 
 }

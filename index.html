@@ -40,8 +40,15 @@
         <section id="banner" class="section">
             <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
             <br>
-            <button id="button-main" class="button-one">Solicite nuestro servicio</button>
+            <button id="button-main" class="button-one" data-modal-open>Solicite nuestro servicio</button>
         </section>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close>
+                    x
+                </button>
+            </div>
+        </div>
     </div>
     <div class="container">
         <section class="menu-text section">
@@ -293,5 +300,6 @@
             </address>
         </footer>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
