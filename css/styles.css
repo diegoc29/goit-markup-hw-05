@@ -184,6 +184,7 @@ ul{
 }
 .container-two2{
     padding: 20px 24px;
+    cursor: pointer;
 }
 
 .clientes{
@@ -217,6 +218,11 @@ ul{
     width: 106px;
     height: 52px;
     fill: #AFB1B8;
+}
+
+.close {
+    position: absolute;
+    right: 31%;
 }
 
 .equi{
