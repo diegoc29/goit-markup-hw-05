@@ -34,7 +34,10 @@ header{
     align-items: center;
     padding-left: 10%;
     border-bottom: #ffffff;
+    
+    
 }
+
 
 h1{
     font-size: 44px;
@@ -124,6 +127,7 @@ ul{
     width: 100%;
     height: 100%;
     background-color: #00000060;
+    transition: opacity 350ms, ubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .center{
@@ -221,8 +225,12 @@ ul{
 }
 
 .close {
-    position: absolute;
-    right: 31%;
+    position: relative;
+    left: 93%;
+    top: 10px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .equi{
@@ -263,6 +271,7 @@ ul{
 
 .is-hidden {
     visibility: hidden;
+    opacity: 0;
 }
 
 .link:hover .email-one{
@@ -271,10 +280,26 @@ ul{
 
 .link {
     color: #212121;
+    position: relative;
 }
 
 .link:hover{
     color: #2196F3;
+}
+
+.link::after{
+    content: "";
+    background-color: #2196F3;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+}
+
+.link:hover::after{
+    opacity: 1;
 }
 
 .link1{
@@ -296,8 +321,10 @@ ul{
     
 }
 
+
 .menu-list li{
     margin-right: 50px;
+    
 
 }
 
